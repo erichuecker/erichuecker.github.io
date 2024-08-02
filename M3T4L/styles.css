@@ -37,7 +37,7 @@ table {
     font-size: 1.2em;
 }
 
-thead {
+#tr-header {
     background-color: #ff00ff;
     color: #000;
 
