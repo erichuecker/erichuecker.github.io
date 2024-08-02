@@ -33,21 +33,21 @@ h1 {
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Ensure borders and spacing align properly */
+    border-collapse: collapse;
     font-size: 1.2em;
-    table-layout: fixed; /* Ensures even spacing of columns */
 }
 
 thead {
     background-color: #ff00ff;
     color: #000;
+
 }
 
 th, td {
     padding: 12px 15px;
     border: 1px solid #f3f3f3;
     text-align: left;
-    word-wrap: break-word; /* Prevents overflow and keeps text within cells */
+    word-wrap: break-word;
 }
 
 tbody tr:nth-child(even) {
@@ -58,6 +58,15 @@ tbody tr:hover {
     background-color: #ff8ff3;
     color: #000;
     transition: background-color 0.3s ease-in-out;
+}
+
+/* Ensure the table remains in three columns */
+table, thead, tbody, th, td, tr {
+    display: table-row-group;
+}
+
+td, th {
+    display: table-cell;
 }
 
 @media screen and (max-width: 768px) {
