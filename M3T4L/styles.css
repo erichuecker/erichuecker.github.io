@@ -33,8 +33,9 @@ h1 {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Ensure borders and spacing align properly */
     font-size: 1.2em;
+    table-layout: fixed; /* Ensures even spacing of columns */
 }
 
 thead {
@@ -46,6 +47,7 @@ th, td {
     padding: 12px 15px;
     border: 1px solid #f3f3f3;
     text-align: left;
+    word-wrap: break-word; /* Prevents overflow and keeps text within cells */
 }
 
 tbody tr:nth-child(even) {
@@ -59,26 +61,24 @@ tbody tr:hover {
 }
 
 @media screen and (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
+    body {
+        padding: 10px;
     }
-    thead {
-        display: none;
+
+    .container {
+        width: 100%;
+        padding: 10px;
     }
-    tr {
-        margin-bottom: 15px;
+
+    h1 {
+        font-size: 2em;
     }
-    td {
-        padding-left: 50%;
-        position: relative;
+
+    table {
+        font-size: 1em;
     }
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%;
-        padding-left: 15px;
-        font-weight: bold;
-        color: #ff00ff;
+
+    th, td {
+        padding: 8px 10px;
     }
 }
