@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Genre Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #444;
+            text-align: left;
+        }
+        th {
+            background-color: #444;
+            color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #3a3a3a;
+        }
+        tr:hover {
+            background-color: #555;
+        }
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #444;
+                margin-bottom: 20px;
+                padding: 12px;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+            td:before {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+            td:nth-of-type(1):before { content: "Band"; }
+            td:nth-of-type(2):before { content: "Genre/Subgenre"; }
+            td:nth-of-type(3):before { content: "Short Bio"; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Band Genre Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Band</th>
+                    <th>Genre/Subgenre</th>
+                    <th>Short Bio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A Night in Texas</td>
+                    <td>Deathcore</td>
+                    <td>An Australian band recognized for their brutal sound that mixes technical death metal and slam elements.</td>
+                </tr>
+                <tr>
+                    <td>Aether Realm</td>
+                    <td>Melodic Death Metal, Folk Metal</td>
+                    <td>An American band blending melodic death metal with folk metal elements, known for their epic, storytelling lyrics and energetic melodies.</td>
+                </tr>
+                <tr>
+                    <td>Allegaeon</td>
+                    <td>Melodic Death Metal, Technical Death Metal</td>
+                    <td>An American band known for blending complex guitar work with melodic elements and often incorporating science-inspired themes in their lyrics.</td>
+                </tr>
+                <tr>
+                    <td>Anaal Nathrakh</td>
+                    <td>Blackened Death Metal, Industrial Metal</td>
+                    <td>A British band that combines black metal, grindcore, and industrial music to create an intense and chaotic sound.</td>
+                </tr>
+                <tr>
+                    <td>Archspire</td>
+                    <td>Technical Death Metal</td>
+                    <td>A Canadian band known for their ultra-fast and precise playing, focusing on highly technical compositions.</td>
+                </tr>
+                <tr>
+                    <td>Brojob</td>
+                    <td>Deathcore, Comedy Metal</td>
+                    <td>An American deathcore band known for their satirical, humorous approach to metal, often addressing social issues and stereotypes with irony.</td>
+                </tr>
+                <tr>
+                    <td>Chelsea Grin</td>
+                    <td>Deathcore</td>
+                    <td>An American deathcore band known for their heavy, groove-laden breakdowns and intense, guttural vocal delivery.</td>
+                </tr>
+                <tr>
+                    <td>Crossfaith</td>
+                    <td>Metalcore, Electronicore</td>
+                    <td>A Japanese band that blends metalcore with electronic music, known for their high-energy live performances and innovative sound.</td>
+                </tr>
+                <tr>
+                    <td>Crystal Lake</td>
+                    <td>Metalcore</td>
+                    <td>A Japanese metalcore band that combines elements of progressive metal and hardcore, with a focus on dynamic and emotional delivery.</td>
+                </tr>
+                <tr>
+                    <td>Dead Like Juliet</td>
+                    <td>Melodic Hardcore</td>
+                    <td>An Italian band merging melodic hardcore with post-hardcore influences, known for their emotionally charged music with strong social themes.</td>
+                </tr>
+                <tr>
+                    <td>Destrage</td>
+                    <td>Progressive Metalcore, Mathcore</td>
+                    <td>An Italian band known for their eclectic style, blending metalcore with progressive and mathcore elements, often with a quirky sense of humor.</td>
+                </tr>
+                <tr>
+                    <td>Disembodied Tyrant</td>
+                    <td>Technical Deathcore</td>
+                    <td>A newer deathcore band noted for their intricate guitar work and complex song structures.</td>
+                </tr>
+                <tr>
+                    <td>Fleshgod Apocalypse</td>
+                    <td>Symphonic Death Metal</td>
+                    <td>An Italian band that fuses death metal with symphonic elements, creating an epic and grandiose sound, often inspired by classical music.</td>
+                </tr>
+                <tr>
+                    <td>Get the Shot</td>
+                    <td>Hardcore</td>
+                    <td>A Canadian band combining hardcore punk with metallic elements, known for their aggressive energy and socially conscious lyrics.</td>
+                </tr>
+                <tr>
+                    <td>Heilung</td>
+                    <td>Folk, Neo-Medieval</td>
+                    <td>A multinational band known for their ritualistic music, blending traditional folk instruments and chants with a modern, atmospheric touch.</td>
+                </tr>
+                <tr>
+                    <td>Immortal</td>
+                    <td>Black Metal</td>
+                    <td>A pioneering Norwegian black metal band, known for their frosty, atmospheric sound and significant contributions to the early black metal scene.</td>
+                </tr>
+                <tr>
+                    <td>Ingested</td>
+                    <td>Slam Death Metal</td>
+                    <td>A British band known for their brutal death metal, focusing on heavy, slamming breakdowns and guttural vocals.</td>
+                </tr>
+                <tr>
+                    <td>Korpiklaani</td>
+                    <td>Folk Metal</td>
+                    <td>A Finnish band that mixes traditional Finnish folk music with metal, known for their upbeat, party-like atmosphere and themes of nature and mythology.</td>
+                </tr>
+                <tr>
+                    <td>Lorna Shore</td>
+                    <td>Deathcore</td>
+                    <td>Known for their heavy breakdowns and symphonic influences, Lorna Shore has gained significant attention, especially after the release of "To the Hellfire."</td>
+                </tr>
+                <tr>
+                    <td>Ne Obliviscaris</td>
+                    <td>Progressive Death Metal, Extreme Metal</td>
+                    <td>An Australian band known for their complex, progressive compositions that blend death metal with classical, jazz, and world music influences.</td>
+                </tr>
+                <tr>
+                    <td>Orbit Culture</td>
+                    <td>Melodic Death Metal, Groove Metal</td>
+                    <td>A Swedish band blending melodic death metal with groove metal influences, often compared to bands like Gojira and Metallica.</td>
+                </tr>
+                <tr>
+                    <td>Ov Sulfur</td>
+                    <td>Blackened Deathcore</td>
+                    <td>An American band that mixes deathcore with black metal elements, recognized for their dark, atmospheric sound and intense breakdowns.</td>
+                </tr>
+                <tr>
+                    <td>Paleface Swiss</td>
+                    <td>Deathcore, Hardcore</td>
+                    <td>A Swiss band fusing deathcore with hardcore punk, known for their aggressive, groove-oriented style and confrontational lyrics.</td>
+                </tr>
+                <tr>
